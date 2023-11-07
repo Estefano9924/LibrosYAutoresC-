@@ -1,0 +1,98 @@
+AUTORES CRUD
+
+CREAR
+http://localhost:(aqui tu puerto)/api/v1/Autores/ POST
+
+ {
+    "Id": "a056b9fa-7d19-11ee-b962-0242ac120002",
+    "Nombre": "F. Scott Fitzgerald",
+    "Nacionalidad": "Estadounidense"
+  }
+----------------------------------------------------
+  {
+    "Id": "aedaf31a-7d19-11ee-b962-0242ac120002",
+    "Nombre": "Gabriel García Márquez",
+    "Nacionalidad": "Colombiano"
+  }
+-----------------------------------------------------
+  {
+    "Id": "ba7ef248-7d19-11ee-b962-0242ac120002",
+    "Nombre": "Harper Lee",
+    "Nacionalidad": "Estadounidense"
+  }
+
+
+MOSTRAR
+http://localhost:(aqui tu puerto)/api/v1/Autores/a056b9fa-7d19-11ee-b962-0242ac120002
+http://localhost:(aqui tu puerto)/api/v1/Autores/aedaf31a-7d19-11ee-b962-0242ac120002
+http://localhost:(aqui tu puerto)/api/v1/Autores/ba7ef248-7d19-11ee-b962-0242ac120002
+
+
+ACTUALIZAR
+http://localhost:(aqui tu puerto)/api/v1/Autores/a9ca9740-7d19-11ee-b962-0242ac120002 PUT
+
+
+ {
+   "Nombre": "Miguel Vargas Llosa",
+    "Nacionalidad": "Chileno"
+ }
+
+
+ELIMINAR
+http://localhost:(aqui tu puerto)/api/v1/Autores/a056b9fa-7d19-11ee-b962-0242ac120002
+http://localhost:(aqui tu puerto)/api/v1/Autores/aedaf31a-7d19-11ee-b962-0242ac120002
+http://localhost:(aqui tu puerto)/api/v1/Autores/ba7ef248-7d19-11ee-b962-0242ac120002
+
+
+
+LIBROS CRUD
+
+CREAR
+http://localhost:(aqui tu puerto)/api/v1/libros/ POST
+
+ {
+   "Id": "8f596166-7d19-11ee-b962-0242ac120002",
+   "Titulo": "El Gran Gatsby",
+   "Resumen": "La historia de Jay Gatsby y su amor por Daisy Buchanan.",
+   "AutorId": "a056b9fa-7d19-11ee-b962-0242ac120002"
+ }
+----------------------------------------------------------------------------
+ {
+   "Id": "a9ca9740-7d19-11ee-b962-0242ac120002",
+   "Titulo": "Cien años de soledad",
+   "Resumen": "La saga de la familia Buendía en Macondo.",
+   "AutorId": "aedaf31a-7d19-11ee-b962-0242ac120002"
+ }
+------------------------------------------------------------------------------
+ {
+   "Id": "b461077a-7d19-11ee-b962-0242ac120002",
+   "Titulo": "Matar a un ruiseñor",
+   "Resumen": "La historia de la justicia y la moral en el sur de EE. UU.",
+   "AutorId": "ba7ef248-7d19-11ee-b962-0242ac120002"
+ }
+
+
+MOSTRAR
+http://localhost:(aqui tu puerto)/api/v1/libros/8f596166-7d19-11ee-b962-0242ac120002
+http://localhost:(aqui tu puerto)/api/v1/libros/a9ca9740-7d19-11ee-b962-0242ac120002
+http://localhost:(aqui tu puerto)/api/v1/libros/aedaf31a-7d19-11ee-b962-0242ac120002
+
+
+ACTUALIZAR
+http://localhost:(aqui tu puerto)/api/v1/libros/a9ca9740-7d19-11ee-b962-0242ac120002 PUT
+
+
+ {
+   "Titulo": "Cien años",
+   "Resumen": "Yna gran familia con grandes historias.",
+   "AutorId": "aedaf31a-7d19-11ee-b962-0242ac120002"
+ },
+
+
+ELIMINAR
+http://localhost:(aqui tu puerto)/api/v1/libros/8f596166-7d19-11ee-b962-0242ac120002
+http://localhost:(aqui tu puerto)/api/v1/libros/a9ca9740-7d19-11ee-b962-0242ac120002
+http://localhost:(aqui tu puerto)/api/v1/libros/aedaf31a-7d19-11ee-b962-0242ac120002
+
+
+ 
